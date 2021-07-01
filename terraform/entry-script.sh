@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-sudo yum update -y && sudo yum install -y docker
+sudo yum update -y && sudo yum install -y docker && sudo yum install -y git
 sudo systemctl enable docker
 sudo systemctl start docker
 sudo usermod -aG docker ec2-user
@@ -7,7 +7,7 @@ sudo usermod -aG docker ec2-user
 docker pull alpine/git
 
 cd /home/ec2-user
-docker run -ti --rm -v /home/ec2-user:/root -v /home/ec2-user:/git alpine/git clone https://github.com/sergeyanover/jenkins-docker-terraform-aws.git
+git clone https://github.com/sergeyanover/jenkins-docker-terraform-aws.git
 cd jenkins-docker-terraform-aws
 cd jenkins
 docker build -t jenkins .

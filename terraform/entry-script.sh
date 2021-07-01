@@ -6,6 +6,8 @@ sudo usermod -aG docker ec2-user
 
 docker pull alpine/git
 
+mkdir git
+cd git
 docker run -ti --rm -v /home/ec2-user:/root -v /home/ec2-user:/git alpine/git clone https://github.com/sergeyanover/jenkins-docker-terraform-aws.git
 cd jenkins-docker-terraform-aws
 cd jenkins

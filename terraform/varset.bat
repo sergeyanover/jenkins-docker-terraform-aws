@@ -1,4 +1,4 @@
-set AWS_ACCESS_KEY_ID=AKIA33EGTFXIPQLH2KPA
-set AWS_SECRET_ACCESS_KEY=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
+set AWS_ACCESS_KEY_ID=xxxxxxxxxxxx
+set AWS_SECRET_ACCESS_KEY=xxxxxxxxxxxxxx
 set AWS_DEFAULT_REGION=eu-central-1
 
